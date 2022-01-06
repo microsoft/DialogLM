@@ -1,14 +1,17 @@
-# Project
+# DialogLM
+Code for AAAI 2022 paper: *[DialogLM: Pre-trained Model for Long Dialogue Understanding and Summarization](https://arxiv.org/abs/2109.02492)*.
 
-> This repo has been populated by an initial template to help get you started. Please
-> make sure to update the content to build a great experience for community-building.
+## Pre-trained Models
+We release two versions of pre-trained models.
+- **DialogLM** is based on [UniLMv2](https://arxiv.org/abs/2002.12804). According to whether sparse attention is introduced, it can be divided into two different versions to process dialogs of different lengths.
+- **DialogLED** builds on [Longformer-Encoder-Decoder (LED)](https://arxiv.org/abs/2004.05150) architecture and uses window-based denoising as the pre-training task on a large amount of long dialogue data for further training. You can use its [base version](https://huggingface.co/MingZhong/DialogLED-base-16384) and [large version](https://huggingface.co/MingZhong/DialogLED-large-5120) directly through HuggingFace.
 
-As the maintainer of this project, please make a few updates:
+## Datasets
+Please download the five datasets we used in our paper [here]https://github.com/maszhongming/DialogLM (AMI, ICSI, QMSum, ForeverDreaming, TVMegaSite).
 
-- Improving this README.MD file to provide a great experience
-- Updating SUPPORT.MD with content about this project's support experience
-- Understanding the security reporting process in SECURITY.MD
-- Remove this section from the README
+## Finetuning for Downstream Tasks
+Please go to specific folders to apply them to downstream tasks related to long dialogues.
+
 
 ## Contributing
 
